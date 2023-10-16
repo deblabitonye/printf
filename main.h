@@ -9,6 +9,6 @@ int _strlenc(const char *str);
 int _printf(const char *format, ...);
 int print_dec(va_list args);
 int print_int(va_list args);
-
+int print_37(void);
 
 #endif

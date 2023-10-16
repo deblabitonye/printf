@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * print-string - print a string
  * @val: argument
@@ -6,7 +6,7 @@ nclude "main.h"
  */
 int Print_string(va_list val)
 {
-char *str
+char *str;
 int i;
 int length;
 str = va_arg(val, char*);
@@ -22,7 +22,7 @@ else
 {
 length = _strlen(str);
 for (i = 0; i < length; i++)
-_putchar(str[i];
+_putchar(str[i]);
 return (length);
 }
 }

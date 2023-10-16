@@ -7,8 +7,8 @@
 
 int print_int(va_list args)
 {
-	int n - va_arg(arg, int);
-	int num, lat = n % 10, digit, exp = 1;
+	int n = va_arg(args, int);
+	int num, last = n % 10, digit, exp = 1;
 	int i = 1;
 
 	n = n / 10;
@@ -34,7 +34,7 @@ int print_int(va_list args)
 		{
 			digit = num / exp;
 			_putchar(digit + '0');
-			num = num - (digit * exo);
+			num = num - (digit * exp);
 			exp = exp / 10;
 			i++;
 		}
@@ -52,8 +52,8 @@ int print_int(va_list args)
 
 int print_dec(va_list args)
 {
-	int n - va_arg(arg, int);
-	int num, lat = n % 10, digit, exp = 1;
+	int n =  va_arg(args, int);
+	int num, last = n % 10, digit, exp = 1;
 	int i = 1;
 
 	n = n / 10;

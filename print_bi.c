@@ -1,4 +1,4 @@
-#include "man.h"
+#include "main.h"
 /**
  * print_bin - converts to binary
  * @val: argument
@@ -15,7 +15,7 @@ int print_bin(va_list val)
 
 	for (i = 0; i< 32; i++)
 	{
-		p = ((a << (32 - i)); & num);
+		k = ((a << (32 - i)) & num);
 		if (k >> (31 - i))
 			flag = 1;
 		if (flag)

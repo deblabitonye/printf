@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 	match m[] = {
-		{"%c" , printf_char}, {"%s", printf_string}, {"%%" , print_37}, {"%d", print_dec}, {"%i" , print_int}, {"%r" , print_revs}, {"%R", print_rot13}, {"%b", print_bin}, {"%u", print_unisgned}, {"%o", print_oct}, {"%x", print_hex}, {"%X", print_HEX}, {"%S", print_exc_string}, {"%p", print_pointer}
+		{"%c" , printf_char}, {"%s", Print_string}, {"%%" , print_37}, {"%d", print_dec}, {"%i" , print_int}, {"%r" , print_revst}, {"%R", print_rot13}, {"%b", print_bin}, {"%u", print_unsigned}, {"%o", print_oct}, {"%x", print_hex}, {"%X", print_HEX}, {"%S", print_asc_string}, {"%p", print_point}
 	};
 
 	va_list args;
@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
-	while (format[i] = '\0')
+	while (format[i] != '\0')
 	{
 		k = 13;
 		while (k >= 0)
@@ -27,8 +27,7 @@ int _printf(const char *format, ...)
 			if (m[k].id[0] == format[i] && m[k].id[1] == format[ i + 1])
 			{
 				len = len + m[k].f(args);
-				i == i + 2;
-				goto Here;
+				i = i + 2;
 			}
 			k--;
 		}

@@ -19,7 +19,9 @@ int print_HEX_run(unsigned int num)
         counter++;
         array = malloc(sizeof(int) * counter);
         if (array == NULL)
-                return (NULL);
+	{
+                return (-1);
+	}
 
         for (i = 0; i < counter; i++)
         {
@@ -31,6 +33,7 @@ int print_HEX_run(unsigned int num)
                 if (array[i] > 9)
                         array[i] = array[i] + 7;
                 _putchar(array[i] + '0');
+	}
         free(array);
         return (counter);
 }

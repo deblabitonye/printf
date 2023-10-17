@@ -18,9 +18,6 @@ int print_hex_run(unsigned long int num)
         }
         counter++;
         array = malloc(sizeof(long int) * counter);
-        if (array == NULL)
-                return (NULL);
-
         for (i = 0; i < counter; i++)
         {
                 array[i] = temp % 16;
@@ -31,6 +28,7 @@ int print_hex_run(unsigned long int num)
                 if (array[i] > 9)
                         array[i] = array[i] + 39;
                 _putchar(array[i] + '0');
+	}
         free(array);
         return (counter);
 }

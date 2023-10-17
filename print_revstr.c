@@ -14,10 +14,10 @@ int print_revst(va_list val)
 	int j = 0;
 
 	if (s == NULL)
-		S = "(null)";
-	while (s[i] != '\0')
+		s = "(null)";
+	while (s[j] != '\0')
 		j++;
 	for (i = j - 1; i >= 0; i--)
-		_putchar(s[s]);
+		_putchar(s[i]);
 	return (j);
 }

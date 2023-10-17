@@ -14,7 +14,7 @@ int print_rot13(va_list val)
 	char b[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
 
 	if (s == NULL)
-		S = "(null)";
+		s = "(null)";
 	for (i = 0; s[i]; i++)
 	{
 		k = 0;

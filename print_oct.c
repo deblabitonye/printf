@@ -19,9 +19,6 @@ int print_oct(va_list val)
 	}
 	counter++;
 	array = malloc(sizeof(int) * counter);
-	if (array == NULL)
-		return (NULL);
-
 	for (i = 0; i < counter; i++)
 	{
 		array[i] = temp % 8;

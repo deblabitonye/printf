@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 	match m[] = {
-		{"%c" , printf_char}, {"%s", Print_string}, {"%%" , print_37}, {"%d", print_dec}, {"%i" , print_int}, {"%r" , print_revst}, {"%R", print_rot13}, {"%b", print_bin}, {"%u", print_unsigned}, {"%o", print_oct}, {"%x", print_hex}, {"%X", print_HEX}, {"%S", print_asc_string}, {"%p", print_point}
+		{"%c" , printf_char}, {"%s", print_string}, {"%%" , print_37}, {"%d", print_dec}, {"%i" , print_int}, {"%r" , print_revst}, {"%R", print_rot13}, {"%b", print_bin}, {"%u", print_unsigned}, {"%o", print_oct}, {"%x", print_hex}, {"%X", print_HEX}, {"%S", print_asc_string}, {"%p", print_point}
 	};
 
 	va_list args;

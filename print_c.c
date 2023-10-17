@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_char - prints a char.
+ * printf_char - prints a char.
  * @val: arguments
  * Return: 1
  */
@@ -8,6 +8,11 @@ int printf_char(va_list val)
 {
 char str;
 str = va_arg(val, int);
-_putchar(str);
+
+if (_putchar(str) == -1)
+{
+	return -1;
+}
+
 return (1);
 }

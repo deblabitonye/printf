@@ -9,12 +9,20 @@
 #include <stdlib.h>
 #include <limits.h>
 
-
+/**
+ * typedef struct - Struct op
+ *
+ * @format: The format.
+ */
 typedef struct format
 {
 	char *id;
 	int (*f)();
 }match;
+
+/****************** FUNCTIONS ******************/
+
+/* Funtions to print chars, strings,integers and format specifiers*/
 
 int _printf(const char *format, ...);
 int _putchar(char c);

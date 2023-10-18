@@ -22,6 +22,7 @@ print_asc_string},
 	va_start(args, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
+Here:
 
 	while (format[i] != '\0')
 }
@@ -32,6 +33,7 @@ print_asc_string},
 {
 				len = len + m[k].f(args);
 				i = i + 2;
+				goto Here;
 			}
 			k--;
 		}

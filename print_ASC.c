@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_asc_string(va_list val)
+ * print_asc_string - prints string
  * @val: value
  * Return: number of characters printed
  */
@@ -23,7 +23,7 @@ _putchar('\\');
 _putchar('x');
 len = len + 2;
 value = s[i];
-if(value < 16 )
+if (value < 16)
 {
 _putchar('0');
 len++;

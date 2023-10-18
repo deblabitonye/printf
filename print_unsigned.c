@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_int - prints integer
+ * print_unsigned - prints integer
  * @args: argument to print
  * Return: number of characters
  */

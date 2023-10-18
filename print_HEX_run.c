@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_HEX_run - converts to HEX
- * @val: variale parameter
+ * @num: value to be converted
  * Return: counter
  */
 

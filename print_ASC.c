@@ -40,3 +40,4 @@ int print_asc_string(va_list val)
 	return (len);
 }
 
+

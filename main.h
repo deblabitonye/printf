@@ -9,6 +9,9 @@
 #include <stdlib.h>
 #include <limits.h>
 
+#define BUFF_SIZE 1024
+
+
 /**
  * typedef struct - Struct op
  *

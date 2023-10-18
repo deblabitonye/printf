@@ -11,7 +11,7 @@ str = va_arg(val, int);
 
 if (_putchar(str) == -1)
 {
-	return -1;
+return (-1);
 }
 
 return (1);
